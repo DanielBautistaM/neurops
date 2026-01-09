@@ -1,0 +1,62 @@
+/* Capa exclusiva para tablets (641px - 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* Ajustes generales de tipografía grandes del hero (ligeramente más pequeños que desktop) */
+  .App .text-6xl {
+    font-size: 2.5rem !important; /* ~40px */
+    line-height: 1.2 !important;
+  }
+  .App .text-5xl {
+    font-size: 2.125rem !important; /* ~34px */
+    line-height: 1.2 !important;
+  }
+
+  /* Hero: márgenes laterales un poco más contenidos */
+  .App .top-20.left-16.right-16.bottom-20.rounded-3xl {
+    top: 5rem !important;
+    left: 2rem !important;
+    right: 2rem !important;
+    bottom: 6rem !important;
+    border-radius: 1.25rem !important;
+  }
+
+  /* Reposicionar ligeramente el indicador de scroll en tablet */
+  .App .absolute.bottom-32.right-24.flex.flex-col.items-center.text-gray-400.z-20 {
+    right: 2rem !important;
+  }
+
+  /* Services: usar 2 columnas; forzar tarjetas grandes/pequeñas a ancho completo por fila */
+  .App #servicios .grid-cols-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  .App #servicios .col-span-2,
+  .App #servicios .col-span-1 {
+    grid-column: span 2 / span 2 !important;
+  }
+  .App #servicios .p-8 {
+    padding: 1.5rem !important; /* p-6 equivalente */
+  }
+
+  /* About: carrusel un poco más bajo que desktop */
+  .App .h-\\[500px\\] {
+    height: 440px !important;
+  }
+
+  /* Contacto: paddings moderados */
+  .App #contacto .p-8 {
+    padding: 1.5rem !important; /* p-6 */
+  }
+
+  /* Navbar: tamaño de logo intermedio en tablet */
+  .App nav .h-10.w-10.object-contain.rounded-lg {
+    width: 2.5rem !important;  /* 40px */
+    height: 2.5rem !important; /* 40px */
+  }
+
+  /* Botones flotantes: márgenes cómodos */
+  .App .fixed.bottom-8.right-8 {
+    bottom: 1.5rem !important;
+    right: 1.5rem !important;
+  }
+}
+
+

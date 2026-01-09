@@ -1,0 +1,99 @@
+/* Capa exclusiva para móviles (<= 640px) */
+@media (max-width: 640px) {
+  /* Ajustes generales */
+  .App .h-screen {
+    min-height: 100svh;
+    height: auto !important;
+  }
+
+  .App h2.text-3xl {
+    font-size: 1.5rem !important; /* ~24px */
+    line-height: 1.25 !important;
+  }
+
+  /* Navbar: reduce tamaño del logo en móviles */
+  .App nav .h-10.w-10.object-contain.rounded-lg {
+    width: 2rem !important;  /* 32px */
+    height: 2rem !important; /* 32px */
+  }
+
+  /* Hero: acomodo de márgenes y tamaños */
+  .App section.relative.pt-16.bg-white {
+    padding-top: 4.5rem !important;
+  }
+
+  /* Contenedor de imagen de fondo del hero */
+  .App .top-20.left-16.right-16.bottom-20.rounded-3xl {
+    top: 5rem !important;
+    left: 1rem !important;
+    right: 1rem !important;
+    bottom: 7rem !important;
+    border-radius: 1rem !important;
+  }
+
+  /* Cuadro de bienvenida (posición y padding) */
+  .App .absolute.bottom-20.left-16.rounded-tr-3xl.p-16 {
+    left: 1rem !important;
+    right: 1rem !important;
+    bottom: 1rem !important;
+    padding: 1rem !important;
+    border-top-right-radius: 1rem !important;
+    height: auto !important;
+    width: auto !important;
+  }
+
+  /* Tipografías grandes del hero */
+  .App .text-6xl {
+    font-size: 2rem !important; /* ~32px */
+    line-height: 1.2 !important;
+  }
+  .App .text-5xl {
+    font-size: 1.75rem !important; /* ~28px */
+    line-height: 1.2 !important;
+  }
+
+  /* Services: pasar grillas de 3 columnas a 1 columna */
+  .App #servicios .grid-cols-3 {
+    grid-template-columns: 1fr !important;
+  }
+  .App #servicios .col-span-2,
+  .App #servicios .col-span-1 {
+    grid-column: span 1 / span 1 !important;
+  }
+  .App #servicios .p-8 {
+    padding: 1rem !important;
+  }
+
+  /* About: carrusel un poco más bajo en móviles */
+  .App .h-\\[500px\\] {
+    height: 380px !important;
+  }
+
+  /* Testimonials: conservar legibilidad del indicador de scroll */
+  .App .w-px.h-16 {
+    height: 12rem !important;
+  }
+
+  /* Contact: espaciados más cómodos */
+  .App #contacto .p-8 {
+    padding: 1rem !important;
+  }
+
+  /* BackgroundLights: desactivar en móviles para rendimiento */
+  .App .fixed.inset-0.pointer-events-none.z-0 {
+    display: none !important;
+  }
+
+  /* Botones flotantes: acercar a bordes y reducir impacto visual */
+  .App .fixed.bottom-8.right-8 {
+    bottom: 1rem !important;
+    right: 1rem !important;
+  }
+
+  /* Hero: ocultar solo el texto 'Scroll' en móviles */
+  .App .absolute.bottom-32.right-24.flex.flex-col.items-center.text-gray-400.z-20 > span {
+    display: none !important;
+  }
+}
+
+
