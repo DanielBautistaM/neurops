@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import About from './components/About';
 import Testimonials from './components/Testimonials';
+import YouTubeSection from './components/YouTubeSection';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import BackgroundLights from './components/BackgroundLights';
@@ -18,6 +19,7 @@ function App() {
         <Services />
         <About />
         <Testimonials />
+        <YouTubeSection />
         <Contact />
         <Footer />
       </div>
